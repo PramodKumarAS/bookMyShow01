@@ -1,6 +1,8 @@
+// src/Pages/ProtectedRoute.jsx
+
 const ProtectedRoute = ({ children }) => {
-  console.log("ProtectedRoute rendered"); // For debug
-  return children; // Just render children without any checks
+  // TEMP BYPASS: Always allow access
+  return children;
 };
 
 export default ProtectedRoute;
