@@ -1,8 +1,12 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/*",
-      "destination": "/index.html"
+      "handle": "filesystem"
+    },
+    {
+      "handle": "rewrite",
+      "src": "/*",
+      "dest": "/index.html"
     }
   ]
 }
