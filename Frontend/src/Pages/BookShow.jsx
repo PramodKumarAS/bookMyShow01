@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { hideLoading, showLoading } from "../Redux/loaderSlice";
-import { getShowById } from "../../API/show";
+import { getShowById } from "../API/show";
 import { useNavigate, useParams } from "react-router-dom";
 import { message, Card, Row, Col, Button } from "antd";
 import moment from 'moment';
 import StripeCheckout from "react-stripe-checkout";
-import { bookShow, makePayment } from "../../API/book";
+import { bookShow, makePayment } from "../API/book";
 
 const STRIPE_PUB_KEY = "pk_test_51RHEsu4FA6mIWZeoTNKj2kp6jrk6c5ZhyN8uYUjDwyvKTY9iUBAI6kSW6PqB3g1GJtwJBcSi4IqOcHeMrZC80ZNX00lwn6lwLx"
 

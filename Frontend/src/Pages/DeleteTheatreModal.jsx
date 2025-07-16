@@ -1,7 +1,7 @@
 import { Modal, Button, message } from 'antd';
 import { showLoading, hideLoading } from '../Redux/loaderSlice';
 import { useDispatch } from 'react-redux';
-import { deleteTheatre } from '../../API/theatre';
+import { deleteTheatre } from '../API/theatre';
 
 const DeleteTheatreModal = ({ isDeleteModalOpen, selectedTheatre, setIsDeleteModalOpen, setSelectedTheatre, getData }) => {
  

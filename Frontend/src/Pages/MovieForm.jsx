@@ -2,7 +2,7 @@ import { Col, Modal, Row, Form, Input, Select, Button, message } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import { showLoading, hideLoading } from '../Redux/loaderSlice';
 import { useDispatch } from 'react-redux';
-import { addMovie, updateMovie } from '../../API/movies';
+import { addMovie, updateMovie } from '../API/movies';
 // import moment from 'moment';
 
 const MovieForm = ({ isModalOpen, setIsModalOpen, selectedMovie, setSelectedMovie, formType, getData }) => {

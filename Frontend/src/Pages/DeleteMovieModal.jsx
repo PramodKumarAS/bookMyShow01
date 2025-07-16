@@ -1,7 +1,7 @@
 import { Modal, Button, message } from 'antd';
 import { showLoading, hideLoading } from '../Redux/loaderSlice';
 import { useDispatch } from 'react-redux';
-import { deleteMovie} from '../../API/movies';
+import { deleteMovie} from '../API/movies';
 
 const DeleteMovieModal = ({ isDeleteModalOpen, selectedMovie, setIsDeleteModalOpen, setSelectedMovie, getData }) => {
   

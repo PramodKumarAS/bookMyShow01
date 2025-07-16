@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Checkbox, Form, Input, Radio, message } from 'antd';
-import { registerUser } from '../../API/users';
+import { registerUser } from '../API/users';
 import {useNavigate} from 'react-router-dom';
 
 const formItemLayout = {

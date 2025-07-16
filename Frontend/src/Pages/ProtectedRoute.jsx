@@ -12,7 +12,7 @@ import {
 import { Link } from "react-router-dom";
 import { hideLoading, showLoading } from "../Redux/loaderSlice";
 import { setUser } from "../Redux/userSlice";
-import { getCurrentUser } from "../../API/users";
+import { getCurrentUser } from "../API/users";
 
 function ProtectedRoute({ children }) {
   

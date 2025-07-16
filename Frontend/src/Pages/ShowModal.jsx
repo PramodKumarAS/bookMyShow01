@@ -17,13 +17,13 @@ import {
     DeleteOutlined,
   } from "@ant-design/icons";
   import { useEffect, useState } from "react";
-  import { getAllMovies } from "../../API/movies";
+  import { getAllMovies } from "../API/movies";
   import {
     addShow,
     deleteShow,
     getShowsByTheatre,
     updateShow,
-  } from "../../API/show";
+  } from "../API/show";
   
   const ShowModal = ({
     isShowModalOpen,

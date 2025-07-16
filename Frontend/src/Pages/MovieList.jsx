@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Table } from "antd";
 // import MovieForm from "./MovieForm";
 import { hideLoading, showLoading } from "../Redux/loaderSlice";
-import { getAllMovies } from "../../API/movies";
+import { getAllMovies } from "../API/movies";
 import { useDispatch } from "react-redux";
 // import moment from "moment";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";

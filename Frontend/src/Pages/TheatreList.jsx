@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Table, Button, message} from 'antd';
 import DeleteTheatreModal from './DeleteTheatreModal';
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
-import { getAllTheatresByOwner } from '../../API/theatre';
+import { getAllTheatresByOwner } from '../API/theatre';
 import { useSelector, useDispatch } from 'react-redux';
 import { showLoading, hideLoading } from '../Redux/loaderSlice';
 import TheatreFormModal from './TheatreFormModal';

@@ -4,8 +4,8 @@ import { useDispatch } from "react-redux";
 import { hideLoading, showLoading } from "../Redux/loaderSlice";
 import { message, Input, Divider, Row, Col } from "antd";
 import { CalendarOutlined } from '@ant-design/icons';
-import { getAllTheatresByMovie } from "../../API/show";
-import { getMovieById } from "../../API/movies";
+import { getAllTheatresByMovie } from "../API/show";
+import { getMovieById } from "../API/movies";
 import moment from "moment";
 
 const SingleMovie = () => {

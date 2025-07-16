@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getAllTheatres, updateTheatre } from '../../API/theatre';
+import { getAllTheatres, updateTheatre } from '../API/theatre';
 import { showLoading, hideLoading } from '../Redux/loaderSlice';
 import { useDispatch } from 'react-redux';
 import { message, Button, Table } from 'antd';

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Button, Form, Input } from "antd";
 import { useNavigate } from "react-router-dom";
-import { resetPassword } from '../../API/users';
+import { resetPassword } from '../API/users';
 import { message } from 'antd'
 
 function Reset() {

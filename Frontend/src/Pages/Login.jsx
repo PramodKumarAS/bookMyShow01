@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Button, Form, Input, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
-import { loginUser } from '../../API/users'
+import { loginUser } from '../API/users'
 
 function Login() {
   const navigate = useNavigate()
