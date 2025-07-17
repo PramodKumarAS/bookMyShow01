@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: 'https://bookmyshow01-nqip.onrender.com',
+  baseURL: 'https://bookmyshow01-nlay.onrender.com',
   headers: {
     'Content-Type': 'application/json'
   }
