@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors())
 
 // ✅ Serve static files from frontend/dist
-app.use(express.static(path.join(__dirname, "../frontend/bms-frontend")));
+app.use(express.static(path.join(__dirname, "./Frontend")));
 
 // User Routes
 app.use("/api", userRouter);
@@ -25,7 +25,7 @@ app.use("/api", bookRouter)
 
 // ✅ Handle SPA client-side routing fallback
 app.get(/^\/(?!api).*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/bms-frontend", "index.html"));
+  res.sendFile(path.join(__dirname, "./Frontend", "index.html"));
 });
 
 // Connect to MongoDB
