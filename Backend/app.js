@@ -6,6 +6,7 @@ const theatreRouter = require("./Routes/theatre");
 const showRouter = require("./Routes/show");
 const bookRouter = require("./Routes/booking");
 const cors = require("cors");
+const path = require("path")
 
 dotenv.config();
 const app = express();
