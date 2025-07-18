@@ -17,22 +17,11 @@ import Profile from './Pages/Profile'
 function App() {
 
   return (
-    //<Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path='/user' element={<ProtectedRoute><Home/></ProtectedRoute>}></Route>
-          <Route path="/home" element={<ProtectedRoute><Admin/></ProtectedRoute>} />
           <Route path='/login' element={<Login/>}></Route>
-          <Route path='/register' element={<Register/>}></Route>
-          <Route path="/partner" element={<ProtectedRoute><Partner /></ProtectedRoute>} />
-          <Route path="/movie/:id" element={<ProtectedRoute><SingleMovie /></ProtectedRoute>} />
-          <Route path="/book-show/:id" element={<ProtectedRoute><BookShow /></ProtectedRoute>} />
-          <Route path='/forget' element={<Forget/>} />
-          <Route path='/reset' element={<Reset />} />
-          <Route path='/profile' element={<Profile />} />
         </Routes>
       </BrowserRouter>
-    //</Provider>
   )
 }
 
