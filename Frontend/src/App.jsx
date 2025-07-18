@@ -17,13 +17,7 @@ import Profile from './Pages/Profile'
 function App() {
 
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <div>Hello</div>
-        </Routes>
-      </BrowserRouter>
-    </Provider>
+    <div>Hello</div>
   )
 }
 
