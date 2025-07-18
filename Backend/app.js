@@ -9,19 +9,12 @@ const cors = require("cors");
 
 dotenv.config();
 const app = express();
-
 app.use(express.json());
-app.use(cors({
-  origin: ['https://bookmyshow01-1.onrender.com', 'http://localhost:3000'], 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
-}));
 
+app.use(cors())
 
-// //Apply CORS **before** routes
-// app.use(cors({ origin: "http://localhost:5173", credentials: true }));
-
+// ✅ Serve static files from frontend/dist
+app.use(express.static(path.join(__dirname, "../frontend/bms-frontend")));
 
 // User Routes
 app.use("/api", userRouter);
@@ -29,6 +22,11 @@ app.use("/api", theatreRouter)
 app.use("/api", movieRouter);
 app.use("/api", showRouter)
 app.use("/api", bookRouter)
+
+// ✅ Handle SPA client-side routing fallback
+app.get(/^\/(?!api).*/, (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/bms-frontend", "index.html"));
+});
 
 // Connect to MongoDB
 const connectDB = require("./Config/db");
