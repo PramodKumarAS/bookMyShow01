@@ -26,6 +26,7 @@ app.use("/api", bookRouter)
 
 // ✅ Handle SPA client-side routing fallback
 app.get(/^\/(?!api).*/, (req, res) => {
+  console.log("🎯 Fallback route triggered");
   res.sendFile(path.join(__dirname, "../Frontend/dist", "index.html"));
 });
 
